@@ -1,0 +1,17 @@
+{
+	"events": [{
+			"year": 1649,
+			"events": ["The Tenure of Kings and Magistrates", "Execution of Charles I"]
+		},
+		{
+			"year": 1665,
+			"events": ["Great Plague", "Micrographia"]
+		}, {
+			"year": 1666,
+			"events": ["Great Fire", "Grace Abounding to the Chief of Sinners"]
+		}, {
+			"year": 1667,
+			"events": ["Paradise Lost"]
+		}
+	]
+}

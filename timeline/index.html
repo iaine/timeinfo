@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+   <title>Timeline</title>
+</head>
+<body>
+   <p>Textual timeline of events</p>
+   <div id="time">
+   </div>
+   <script type="application/javascript">
+      var chart;
+      function createTimeIndex(divName) {
+        chart = document.getElementById(divName);
+        function reqListener () {
+          var worker = JSON.parse(this.response);
+          console.log(createIndex(worker.events));
+          chart.innerHTML = createIndex(worker.events);
+        }
+        var req = new XMLHttpRequest();
+        req.addEventListener("load", reqListener);
+        req.open("GET", "events.json");
+        req.send();
+      }
+
+      function createIndex (data) {
+         html = "<div id=\"indexTime\">";
+         data.forEach( function (d) {
+             html += "<div id=\"Entry\" style=\"border-left: 1px solid black; margin-left:2%;padding:1%;\"><div id=\"entryName\"><strong>" + d.year + "</strong><div id=\"entries\">";
+             d.events.forEach( function (ev) { html += "<div>" + ev + "</div>";  });
+             html += '</div></div></div>';
+         });
+         return html + "</div>";
+      }
+
+      createTimeIndex("time");
+   </script>
+</body>
+</html>
+
