@@ -1,17 +1,26 @@
 {
 	"events": [{
 			"year": 1649,
-			"events": ["The Tenure of Kings and Magistrates", "Execution of Charles I"]
+			"events": ["Execution of Charles I"],
+            "books": [{"title":"The Tenure of Kings and Magistrates", "author": "charles"}]
 		},
 		{
 			"year": 1665,
-			"events": ["Great Plague", "Micrographia"]
+			"events": ["Great Plague"],
+            "books": [{"title":"Micrographia", "author": "Robert Hooke"}]
 		}, {
 			"year": 1666,
-			"events": ["Great Fire", "Grace Abounding to the Chief of Sinners"]
+			"events": ["Great Fire"],
+            "books": [{"title":"Grace Abounding to the Chief of Sinners", "author": "John Bunyan"}]
 		}, {
 			"year": 1667,
-			"events": ["Paradise Lost"]
-		}
+			"events": [],
+            "books": [{"title":"Paradise Lost", "author":"John Milton"}]
+		},
+               {
+               "year": 1678,
+               "events": [],
+               "books": [{"title":"Pilgrim's Progress", "author":"John Bunyan"}]
+               }
 	]
 }
